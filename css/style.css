@@ -1,0 +1,245 @@
+/* importation des fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+@font-face {
+    font-family: 'porporaregular';
+    src: url('../fonts/porpora-regular_12.14.56-webfont.woff2') format('woff2'),
+         url('../fonts/porpora-regular_12.14.56-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--body-color);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* variables réutilisable */
+:root{
+    /* ===== Colors ===== */
+    --primary-color: #072038;
+    --white: #FFFFFF;
+    
+    --pelorus-100: #F0FDFF;
+    --pelorus-500: #26C1D9;
+    --pelorus-800: #0D4048;
+
+    --bitter-500: #FD7762;
+}
+
+/* ============ Stylisation réutilisable ============ */
+.p-max{
+    padding: 6rem;
+}
+.btn-prim{
+    min-width: 109px;
+    min-height: 48px;
+    font-family: 'Outfit';
+    font-size: 16px;
+    color: var(--primary-color);
+    background-color: var(--pelorus-500);
+    border: none;
+    border-radius: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.btn-sec{
+    min-width: 109px;
+    min-height: 48px;
+    font-family: 'Outfit';
+    font-size: 16px;
+    color: var(--primary-color);
+    background-color: var(--bitter-500);
+    border: none;
+    border-radius: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.datafactory i{
+    color: var(--bitter-500);
+    border-bottom-left-radius: 5px;
+    border-left: 1.5px solid;
+    border-bottom: 1.5px solid;
+    margin-right: 1rem;
+}
+.titre-1{
+    font-family: 'Outfit';
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 600;
+}
+.titre-2{
+    font-family: 'Outfit';
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 500;
+}
+.titre-3{
+    font-family: 'Outfit';
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 500;
+}
+.titre-4{
+    font-family: 'Outfit';
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 500;
+}
+.titre-5{
+    font-family: 'Outfit';
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.titre-6{
+    font-family: 'Outfit';
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.text-regular{
+    font-family: 'porporaregular';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.separateur-diagonal{
+    position: relative;
+    top: -4rem;
+    min-height: 150px;
+    background-color: var(--primary-color);
+    rotate: -3.5deg;
+    padding-top: 5rem;
+    z-index: 4;
+}
+
+/* stylisation du header */
+header nav{
+    background-color: var(--primary-color);
+}
+.nav-container ul li{
+    background-color: var(--primary-color);
+}
+.nav-container ul li a{
+    font-family: 'Outfit';
+    font-size: 16px;
+    color: var(--white);
+}
+.nav-1 ul li a{
+    color: var(--white);
+}
+.nav-2 ul li a{
+    color: var(--pelorus-500);
+}
+/* ======= Products ======= */
+/* CSS pour le menu déroulant "Products" */
+.dropdown-menu-products {
+    position: absolute;
+    display: none;
+    width: 100%;
+    max-height: 320px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+}
+/* CSS pour afficher le menu déroulant "Products" lorsque la classe "active" est présente */
+.dropdown-menu-products.active {
+    display: block;
+}
+/* ======= Resources ======= */
+/* CSS pour le menu déroulant "Products" */
+/* CSS pour afficher le menu déroulant "Resources" lorsque la classe "active" est présente */
+.dropdown-menu-resources {
+    position: absolute;
+    display: none;
+    width: 100%;
+    max-height: 320px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+}
+/* CSS pour afficher le menu déroulant lorsque la classe "active" est présente */
+.dropdown-menu-resources.active {
+    display: block;
+}
+/* CSS pour afficher le menu déroulant lors du survol du lien "Products" */
+a.text-decoration-none:hover + .dropdown-menu {
+    display: block;
+}
+.products-title-row{
+    margin-left: -4rem;
+}
+/* Stylisation dropdown section */
+.dropdown-subtitle{
+    color: var(--pelorus-500);
+}
+/* Fin Header */
+
+/* Stylisation des logos d'entreprise */
+.ent-logo-row img{
+    width: 130px;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+.marquee-banner-welcomes{
+    display: flex;
+    max-height: 170px;
+}
+/* Stylisation de la bannière en fin de section welcome */
+.marquee-banner{
+    display: flex;
+    font-family: 'Outfit';
+    font-size: 160px;
+    line-height: 160px;
+    font-weight: 500;
+    color: var(--pelorus-500);
+    white-space: nowrap;
+    rotate: -3.5deg;
+    justify-content: center;
+}
+/* Stylisation des mots en lettre vide */
+.marquee-banner span{
+    color: var(--primary-color);
+    text-shadow: 3px 0 0 var(--pelorus-500), 3px 3px 0 var(--pelorus-500), 0 3px 0 var(--pelorus-500), -3px 3px 0 var(--pelorus-500), -3px 0 0 var(--pelorus-500), -3px -3px 0 var(--pelorus-500), 0 -3px 0 var(--pelorus-500), 3px -3px 0 var(--pelorus-500);
+}
+.computer{
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+}
+.computer-analytics-row img{
+    position: relative;
+    max-width: 1060px;
+    max-height: 420px;
+    top: -13rem;
+}
+/* Stylisation des card */
+.knowledges-card{
+    border-radius: 1rem;
+}
+.knowledges-card img{
+    max-width: 600px;
+    max-height: 760px;
+}
+.datafactory-icon-row h5 i{
+    padding: 10px;
+    margin-right: 1rem;
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: var(--pelorus-100);
+}
