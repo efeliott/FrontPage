@@ -18,7 +18,6 @@ html{
 }
 body{
     background: var(--body-color);
-    max-width: 100%;
     overflow-x: hidden;
 }
 /* variables réutilisable */
@@ -29,14 +28,22 @@ body{
     
     --pelorus-100: #F0FDFF;
     --pelorus-500: #26C1D9;
+    --pelorus-700: #156B79;
     --pelorus-800: #0D4048;
 
+    --bitter-300: #FEC9C0;
     --bitter-500: #FD7762;
+
+    --gray-500: #A0BDC0;
 }
 
 /* ============ Stylisation réutilisable ============ */
 .p-max{
     padding: 6rem;
+}
+.py-max{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 .btn-prim{
     min-width: 109px;
@@ -65,6 +72,18 @@ body{
     padding-bottom: 16px;
     padding-left: 12px;
     padding-right: 12px;
+}
+.btn-categorie{
+    min-width: 85px;
+    min-height: 32px;
+    font-family: 'porporaregular';
+    color: var(--pelorus-500);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid var(--pelorus-500);
+    border-radius: 5px;
 }
 .datafactory i{
     color: var(--bitter-500);
@@ -117,14 +136,23 @@ body{
 }
 .separateur-diagonal{
     position: relative;
-    top: -4rem;
-    min-height: 150px;
+    top: -15rem;
+    height: 28rem;
     background-color: var(--primary-color);
     rotate: -3.5deg;
-    padding-top: 5rem;
     z-index: 4;
+    overflow: hidden;
+    left: -1rem;
 }
-
+.separateur-diagonal-2{
+    position: relative;
+    top: -15rem;
+    height: 20rem;
+    background-color: var(--primary-color);
+    rotate: -2.6deg;
+    z-index: 4;
+    left: -1rem;
+}
 /* stylisation du header */
 header nav{
     background-color: var(--primary-color);
@@ -136,6 +164,12 @@ header nav{
     font-family: 'Outfit';
     font-size: 16px;
     color: var(--white);
+    border-radius: 25px;
+    padding: 10px;
+}
+.nav-container ul li .hover-link:hover{
+    background-color: var(--pelorus-100);
+    color: var(--primary-color);
 }
 .nav-1 ul li a{
     color: var(--white);
@@ -202,6 +236,7 @@ a.text-decoration-none:hover + .dropdown-menu {
 /* Stylisation de la bannière en fin de section welcome */
 .marquee-banner{
     display: flex;
+    position: relative;
     font-family: 'Outfit';
     font-size: 160px;
     line-height: 160px;
@@ -209,13 +244,22 @@ a.text-decoration-none:hover + .dropdown-menu {
     color: var(--pelorus-500);
     white-space: nowrap;
     rotate: -3.5deg;
+    top: 10rem;
     justify-content: center;
+    z-index: 5;
 }
 /* Stylisation des mots en lettre vide */
 .marquee-banner span{
     color: var(--primary-color);
     text-shadow: 3px 0 0 var(--pelorus-500), 3px 3px 0 var(--pelorus-500), 0 3px 0 var(--pelorus-500), -3px 3px 0 var(--pelorus-500), -3px 0 0 var(--pelorus-500), -3px -3px 0 var(--pelorus-500), 0 -3px 0 var(--pelorus-500), 3px -3px 0 var(--pelorus-500);
 }
+/* Section vision */
+.vision .parallaxe-image{
+    position: absolute;
+    top: 120rem;
+    right: 0;
+}
+/* Section customer */
 .computer{
     display: flex;
     justify-content: center; /* Centre horizontalement */
@@ -228,7 +272,10 @@ a.text-decoration-none:hover + .dropdown-menu {
 }
 /* Stylisation des card */
 .knowledges-card{
-    border-radius: 1rem;
+    border-radius: 25px;
+    z-index: 5;
+    max-height: 800px;
+    overflow: hidden; /* Masque tout contenu débordant de la carte */
 }
 .knowledges-card img{
     max-width: 600px;
@@ -242,4 +289,98 @@ a.text-decoration-none:hover + .dropdown-menu {
     width: 50px;
     text-align: center;
     background-color: var(--pelorus-100);
+    border-radius: 5px;
+}
+.bitter-300-half-circle{
+    height: 0;
+    width: 0;
+    align-items: center;
+    position: relative;
+    right: -38rem;
+    top: -65rem;
+    border-radius: 100%;
+    border: 42rem solid transparent;
+    border-top-color: var(--bitter-300);
+    border-left-color: var(--bitter-300);
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+.white-half-circle{
+    height: 0;
+    width: 0;
+    align-items: center;
+    position: relative;
+    right: -62rem;
+    top: -126.8rem;
+    border-radius: 100%;
+    border: 20rem solid transparent;
+    border-top-color: var(--white);
+    border-left-color: var(--white);
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+.tablet-row img{
+    position: relative;
+    min-width: 560px;
+    min-height: 420px;
+    bottom: -7rem;
+    right: -5rem;
+}
+/* Customer section */
+.shape-background{
+    position: absolute;
+    right: 0;
+}
+.carousel-card {
+    position: relative;
+    max-height: 600px;
+    overflow: hidden;
+    border-radius: 25px;
+    height: fit-content;
+    background: linear-gradient(to left, var(--primary-color) 50%, rgba(7, 32, 56, 0.5) 60%, transparent 100%);
+    z-index: 2; /* Modifiez la valeur z-index à 2 */
+}
+.carousel-card img {
+    position: relative;
+    max-height: 600px;
+    max-width: 630px;
+    z-index: 0; /* Laissez la valeur z-index à 1 pour l'élément img */
+    aspect-ratio: 4/3;
+}
+.carousel-card .customer-logo{
+    max-width: 100px;
+    max-height: 50px;
+}
+.arrow-row{
+    position: absolute;
+    padding-left: 1.5rem;
+}
+.arrow-row a{
+    text-decoration: none;
+    left: 2rem;
+}
+.arrow-row .carousel-control-next{
+    display: inline;
+    left: 4rem;
+}
+.arrow-row a i{
+    font-size: 50px;
+}
+/* Blog section */
+.blog-card{
+    border: 1px solid var(--gray-500);
+}
+.blog-card i{
+    font-size: 44px;
+    color: var(--primary-color);
+}
+/* Section conclusion */
+.conclusion-card{
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    max-height: 500px;
+}
+.conclusion-card img{
+    max-height: 500px;
 }
