@@ -20,8 +20,8 @@
     <title>Pilot'in</title>
 </head>
 <body>
-    <header>
-        <nav>
+  <header>
+        <nav class="nav-bar">
             <div class="nav-container ms-5">
                 <div class="row">
                     <div class="nav-1 col-lg-10 col-md-9 col-sm-8">
@@ -44,7 +44,7 @@
                     <div class="nav-2 d-flex col-lg-2 col-md-3 col-sm-4">
                         <ul class="d-flex list-unstyled list-group list-group-horizontal">
                             <li class="d-flex align-items-center list-group-item border-0">
-                                <Button class="btn-prim">Free demo</Button>
+                                <Button class="btn-prim">Free demo <img src="./assets/png/Icon-right.png" alt="Flèche gauche" class="px-2"></Button>
                             </li>
                             <li class="d-flex align-items-center list-group-item border-0">
                                 <a href="#" class="text-decoration-none">FR <i class='bx bx-chevron-down'></i></a>
@@ -137,7 +137,7 @@
             </div>
         </nav>
     </header>
-    <section class="welcome" style="background-color: var(--primary-color);">
+    <section class="welcome pt-5" style="background-color: var(--primary-color);">
         <div class="container">
             <div class="row pt-5">
                 <div class="col-6 py-5">
@@ -153,7 +153,7 @@
                     </div>
                     <div class="row py-1">
                         <div class="col">
-                            <button class="btn-sec">LET'S TALK</button>
+                            <button class="btn-sec">LET'S TALK <img src="./assets/png/Icon-right.png" alt="Flèche gauche" class="px-2"></button>
                         </div>
                     </div>
                     <div class="row ent-logo-row">
@@ -178,7 +178,7 @@
         </div>
         <div class="row marquee-banner-row pb-5">
             <div class="col">
-                <h1 class="marquee-banner">DATA VAULT – DATA LAKES – DATA MARTS <span class="mx-4">– DATA</span>CLOUD <span class="mx-4">– DATA</span> WAREHOUSES – STRATEGY EXECUTION </h1>
+                <h1 class="marquee-banner">DATA <span class="mx-4">VAULT –</span> DATA LAKES – DATA MARTS <span class="mx-4">– DATA</span>CLOUD <span class="mx-4">– DATA</span> WAREHOUSES – STRATEGY EXECUTION </h1>
             </div>
         </div>
     </section>
@@ -209,7 +209,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <button class="btn-prim mt-3">Discover our vision</button>
+                        <button class="btn-prim mt-3">Discover our vision<img src="./assets/png/Icon-right.png" alt="Flèche gauche" class="px-2"></button>
                     </div>
                 </div>
             </div>
@@ -265,7 +265,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <button class="btn-sec">Découvrir la solution</button>
+                                <button class="btn-sec">Découvrir la solution<img src="./assets/png/Icon-right.png" alt="Flèche gauche" class="px-2"></button>
                             </div>
                         </div>
                     </div>
@@ -303,7 +303,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <button class="btn-sec">Learn more about ProPilot</button>
+                                <button class="btn-sec">Learn more about ProPilot<img src="./assets/png/Icon-right.png" alt="Flèche gauche" class="px-2"></button>
                             </div>
                         </div>
                     </div>
@@ -322,24 +322,84 @@
     <section class="customers">
         <img src="./assets/png/shape-dot-white-bg.png" alt="demi cercle" class="shape-background">
         <div class="container">
-            <div class="card">
-                <div id="customerReviewCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="row carousel-row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
                     <div class="carousel-inner">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="carousel-item active">
-                                    <img src="./assets/png/Casclient-BNPParibas.jpg" alt="">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 carousel-img px-0">
+                                            <img src="./assets/png/Casclient-BNPParibas.jpg" alt="BNP Paribas">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <img src="./assets/png/bnp-paribas-logo.png" alt="BNP Paribas">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="carousel-item active">
-                                    <img src="./assets/png/Casclient-DITP.png" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card item-card">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 carousel-img px-0">
+                                            <img src="./assets/png/Casclient-DITP.png" alt="DITP">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <img src="./assets/png/bnp-paribas-logo.png" alt="BNP Paribas">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="carousel-item active">
-                                    <img src="./assets/png/Casclient-Exki.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 carousel-img px-0">
+                                            <img src="./assets/png/Casclient-Exki.jpeg" alt="Exki">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <img src="./assets/png/bnp-paribas-logo.png" alt="BNP Paribas">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                  </div>
             </div>
         </div>
     </section>
@@ -382,7 +442,7 @@
                                     <p class="text-regular d-inline mb-0">Julien Dereumaux - Capitaine de Pilot’in</p>
                                 </div>
                                 <div class="col-md-2">
-                                    <a href="#"><i class='bx bx-right-arrow-circle' ></i></a>
+                                    <a href="#"><img src="./assets/png/button-right-black.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -414,7 +474,7 @@
                                     <p class="text-regular d-inline mb-0">Julien Dereumaux - Capitaine de Pilot’in</p>
                                 </div>
                                 <div class="col-md-2">
-                                    <a href="#"><i class='bx bx-right-arrow-circle' ></i></a>
+                                    <a href="#"><img src="./assets/png/button-right-black.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -446,7 +506,7 @@
                                     <p class="text-regular d-inline mb-0">Julien Dereumaux - Capitaine de Pilot’in</p>
                                 </div>
                                 <div class="col-md-2">
-                                    <a href="#"><i class='bx bx-right-arrow-circle' ></i></a>
+                                    <a href="#"><img src="./assets/png/button-right-black.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -455,7 +515,7 @@
             </div>
             <div class="row">
                 <div class="col d-flex justify-content-center py-5">
-                    <button class="btn-prim">Tous les articles</button>
+                    <button class="btn-prim">Tous les articles<img src="./assets/png/Icon-right.png" alt="Flèche gauche" class="px-2"></button>
                 </div>
             </div>
         </div>
@@ -481,7 +541,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <button class="btn-sec">Book a demo</button>
+                                <button class="btn-sec">Book a demo<img src="./assets/png/Icon-right.png" alt="Flèche gauche" class="px-2"></button>
                             </div>
                         </div>
                     </div>
@@ -562,8 +622,8 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <a href="#" style="font-size: 36px; color: var(--primary-color);"><i class='bx bxl-twitter' ></i></a>
-                            <a href="#" style="font-size: 36px; color: var(--primary-color);"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="#"><img src="./assets/png/twitter-logo.png" alt="logo twitter"></a>
+                            <a href="#"><img src="./assets/png/linkedin-logo.png" alt="logo linkedin"></a>
                         </div>
                     </div>
                 </div>
@@ -572,6 +632,6 @@
     </footer>
     <script src="./js/nav-menu.js"></script>
     <script src="./js/parallaxe.js"></script>
-
+    <script src="./js/scroll-bar.js"></script>
     </body>
 </html>
