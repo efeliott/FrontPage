@@ -99,6 +99,7 @@ body{
 }
 .btn-sec:hover img{
   display: inline-block;
+  padding-left: 1rem;
 }
 .btn-categorie{
   min-width: 85px;
@@ -390,40 +391,13 @@ a.text-decoration-none:hover + .dropdown-menu {
   background-color: var(--pelorus-100);
   border-radius: 5px;
 }
-.bitter-300-half-circle{
-  height: 0;
-  width: 0;
-  align-items: center;
-  position: relative;
-  right: -38rem;
-  top: -65rem;
-  border-radius: 100%;
-  border: 42rem solid transparent;
-  border-top-color: var(--bitter-300);
-  border-left-color: var(--bitter-300);
-  transform: rotate(-45deg);
-  z-index: -1;
-}
-.white-half-circle{
-  height: 0;
-  width: 0;
-  align-items: center;
-  position: relative;
-  right: -62rem;
-  top: -126.8rem;
-  border-radius: 100%;
-  border: 20rem solid transparent;
-  border-top-color: var(--white);
-  border-left-color: var(--white);
-  transform: rotate(-45deg);
-  z-index: -1;
-}
-.tablet-row img{
-  position: relative;
-  min-width: 560px;
-  min-height: 420px;
-  bottom: -7rem;
-  right: -5rem;
+.propilot-illustration{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  top: 0;
+  right: 0;
 }
 /* Customer section */
 .shape-background{
