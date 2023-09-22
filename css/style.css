@@ -440,6 +440,9 @@ a.text-decoration-none:hover + .dropdown-menu {
 .carousel-img {
   position: relative;
 }
+.carousel-img .cas-client-img{
+  height: 100%;
+}
 .carousel-img .play-btn {
   position: absolute;
   top: 50%;
@@ -448,11 +451,9 @@ a.text-decoration-none:hover + .dropdown-menu {
   z-index: 2;
   transition: transform 0.2s; /* Ajoute une transition pour l'effet de zoom */
 }
-
 .carousel-img .play-btn:hover {
   transform: translate(-50%, -50%) scale(1.2); /* Applique un effet de zoom au survol */
 }
-
 .logo-row img{
   max-width: 120px;
   max-height: 75px;
@@ -479,6 +480,9 @@ a.text-decoration-none:hover + .dropdown-menu {
 }
 .arrow-row .carousel-control-next{
   margin-left: 4rem;
+}
+.dots-row{
+  margin-top: 4rem;
 }
 /* Blog section */
 .blog-card{
