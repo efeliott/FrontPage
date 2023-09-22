@@ -452,6 +452,9 @@ a.text-decoration-none:hover + .dropdown-menu {
   margin-top: 1.5rem;
   left: 2.2rem;
 }
+.arrow-row:hover{
+  color: var(--primary-color);
+}
 .arrow-row .carousel-control-next{
   margin-left: 4rem;
 }
@@ -477,6 +480,21 @@ a.text-decoration-none:hover + .dropdown-menu {
   max-height: 500px;
 }
 /* Footer */
+.footer-link{
+  color: var(--pelorus-500); 
+  font-size: 16px;
+  transition: all 0.4s;
+}
+.footer-link:hover{
+  color: var(--primary-color);
+}
+.footer-right-arrow{
+  opacity: 0;
+}
+.footer-link:hover .footer-right-arrow{
+  color: var(--bitter-500);
+  opacity: 1;
+}
 .rsx-logo a img{
   padding-left: 5px;
 }
