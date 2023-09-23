@@ -15,6 +15,7 @@
 }
 html{
   scroll-behavior: smooth;
+  width: 100%;
 }
 body{
   background: var(--body-color);
@@ -41,8 +42,90 @@ body{
 }
 
 /* ============ Stylisation réutilisable ============ */
-.p-max{
-  padding: 6rem;
+@media screen and (max-width: 576px) {
+  .d-xs-none{
+    display: none;
+  }
+  .p-xs-1{
+    padding: 2rem;
+  }
+  .titre-1{
+    font-family: 'Outfit';
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+  .titre-2{
+    font-family: 'Outfit';
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+  }
+  .titre-3{
+    font-family: 'Outfit';
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+  }
+  .titre-4{
+    font-family: 'Outfit';
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  .titre-5{
+    font-family: 'Outfit';
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  .titre-6{
+    font-family: 'Outfit';
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  header nav{
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) {
+  .titre-1{
+    font-family: 'Outfit';
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 600;
+  }
+  .titre-2{
+    font-family: 'Outfit';
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 500;
+  }
+  .titre-3{
+    font-family: 'Outfit';
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 500;
+  }
+  .titre-4{
+    font-family: 'Outfit';
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+  .titre-5{
+    font-family: 'Outfit';
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  .titre-6{
+    font-family: 'Outfit';
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+  }
 }
 .py-max{
   padding-top: 7rem;
@@ -124,42 +207,6 @@ body{
   border-bottom: 1.5px solid;
   margin-right: 1rem;
 }
-.titre-1{
-  font-family: 'Outfit';
-  font-size: 72px;
-  line-height: 72px;
-  font-weight: 600;
-}
-.titre-2{
-  font-family: 'Outfit';
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 500;
-}
-.titre-3{
-  font-family: 'Outfit';
-  font-size: 48px;
-  line-height: 58px;
-  font-weight: 500;
-}
-.titre-4{
-  font-family: 'Outfit';
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 500;
-}
-.titre-5{
-  font-family: 'Outfit';
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 500;
-}
-.titre-6{
-  font-family: 'Outfit';
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 500;
-}
 .text-regular{
   font-family: 'porporaregular';
   font-size: 18px;
@@ -184,6 +231,10 @@ body{
   z-index: 4;
   left: -1rem;
   right: -1rem;
+}
+.main-container{
+  width: 100%;
+  overflow: hidden;
 }
 /* stylisation du header */
 header{

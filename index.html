@@ -1,714 +1,736 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- Lien pour les icones -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Lien vers la feuille de style -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- Liens des biblihothèques js de bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Lien pour animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <title>Pilot'in</title>
-</head>
-<body>
-    <header>
-        <nav class="nav-bar">
-            <div class="nav-container ms-5">
-                <div class="row">
-                    <div class="nav-1 col-lg-10 col-md-9 col-sm-8">
-                        <ul class="d-flex list-unstyled list-group list-group-horizontal">
-                            <li class="list-group-item border-0">
-                                <a href="#" class="px-5 logo-link-w py-0"><img src="./assets/svg/Logo_blanc.svg" alt="logo pilot'in"></a>
-                                <a href="#" class="px-5 logo-link-b py-0"><img src="./assets/svg/Logo.svg" alt="logo pilot'in"></a>
-                            </li>
-                            <li class="d-flex align-items-center list-group-item border-0">
-                                <a href="#" class="text-decoration-none products-link hover-link">Products <i class='bx bx-chevron-down'></i></a>
-                            </li>
-                            <li class="d-flex align-items-center list-group-item border-0">
-                                <a href="#" class="text-decoration-none resources-link hover-link">Resources <i class='bx bx-chevron-down'></i></a>
-                            </li>
-                            <li class="d-flex align-items-center list-group-item border-0">
-                                <a href="#" class="text-decoration-none hover-link">Company</a>
-                            </li>
-                        </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!-- Lien pour les icones -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Lien vers la feuille de style -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- Liens des biblihothèques js de bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Lien pour animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <title>Pilot'in</title>
+    </head>
+    <body>
+        <div class="main-container">
+            <header>
+                <nav class="nav-bar">
+                    <div class="nav-container ms-5">
+                        <div class="row">
+                            <div class="nav-1 col-lg-10 col-md-9 col-sm-8">
+                                <ul class="d-flex list-unstyled list-group list-group-horizontal">
+                                    <li class="list-group-item border-0">
+                                        <a href="#" class="px-5 logo-link-w py-0"><img src="./assets/svg/Logo_blanc.svg" alt="logo pilot'in"></a>
+                                        <a href="#" class="px-5 logo-link-b py-0"><img src="./assets/svg/Logo.svg" alt="logo pilot'in"></a>
+                                    </li>
+                                    <li class="d-flex align-items-center list-group-item border-0">
+                                        <a href="#" class="text-decoration-none products-link hover-link">Products <i class='bx bx-chevron-down'></i></a>
+                                    </li>
+                                    <li class="d-flex align-items-center list-group-item border-0">
+                                        <a href="#" class="text-decoration-none resources-link hover-link">Resources <i class='bx bx-chevron-down'></i></a>
+                                    </li>
+                                    <li class="d-flex align-items-center list-group-item border-0">
+                                        <a href="#" class="text-decoration-none hover-link">Company</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-2 d-flex col-lg-2 col-md-3 col-sm-4">
+                                <ul class="d-flex list-unstyled list-group list-group-horizontal">
+                                    <li class="d-flex align-items-center list-group-item border-0">
+                                        <Button class="btn-prim">Free demo <img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></Button>
+                                    </li>
+                                    <li class="d-flex align-items-center list-group-item border-0">
+                                        <a href="#" class="text-decoration-none">FR <i class='bx bx-chevron-down'></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="nav-2 d-flex col-lg-2 col-md-3 col-sm-4">
-                        <ul class="d-flex list-unstyled list-group list-group-horizontal">
-                            <li class="d-flex align-items-center list-group-item border-0">
-                                <Button class="btn-prim">Free demo <img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></Button>
-                            </li>
-                            <li class="d-flex align-items-center list-group-item border-0">
-                                <a href="#" class="text-decoration-none">FR <i class='bx bx-chevron-down'></i></a>
-                            </li>
-                        </ul>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="dropdown-menu-products">
+                                    <div class="container py-5">
+                                        <div class="row products-title-row py-4">
+                                            <div class="col">
+                                                <h5 class="titre-5">Our products</h5>
+                                            </div>
+                                        </div>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6 datafactory-item px-2">
+                                                    <div class="row">
+                                                        <h6 class="titre-6 dropdown-subtitle datafactory"><i class='bx bx-trending-up'></i> DataFactory</h6>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 datafactory-item px-2">
+                                                    <div class="row">
+                                                        <h6 class="titre-6 dropdown-subtitle datafactory"><i class='bx bx-trending-up'></i> DataFactory</h6>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown-menu-resources">
+                                    <div class="container py-5">
+                                        <div class="row products-title-row py-4">
+                                            <div class="col">
+                                                <h5 class="titre-5">Discover all our resources</h5>
+                                            </div>
+                                        </div>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-3 datafactory-item px-2">
+                                                    <div class="row">
+                                                        <h6 class="titre-6 dropdown-subtitle datafactory"><i class='bx bx-trending-up'></i> DataFactory</h6>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 datafactory-item px-2">
+                                                    <div class="row">
+                                                        <h6 class="titre-6 dropdown-subtitle datafactory"><i class='bx bx-trending-up'></i> DataFactory</h6>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 datafactory-item px-2">
+                                                    <div class="row">
+                                                        <h6 class="titre-6 dropdown-subtitle datafactory"><i class='bx bx-trending-up'></i> DataFactory</h6>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 datafactory-item px-2">
+                                                    <div class="row">
+                                                        <h6 class="titre-6 dropdown-subtitle datafactory"><i class='bx bx-trending-up'></i> DataFactory</h6>
+                                                    </div>
+                                                    <div class="row">
+                                                        <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section class="welcome pt-5" style="background-color: var(--primary-color);">
+                <div class="container">
+                    <div class="row pt-md-5">
+                        <div class="col-md-6 py-md-5">
+                            <div class="row">
+                                <div class="col-md-10 col-xs-12 py-md-5">
+                                    <h1 class="titre-1 animate__animated animate__fadeInDown" style="color: var(--white);">Meet the future of your <span style="color: var(--pelorus-500);">organization</span> today</h1>
+                                </div>
+                            </div>
+                            <div class="row py-1">
+                                <div class="col-md-10 col-xs-12">
+                                    <p class="text-regular" style="color: var(--white);">We build software that empower public and private organizations to bridge the gap between data, decisions and strategy execution.</p>
+                                </div>
+                            </div>
+                            <div class="row py-1">
+                                <div class="col">
+                                    <button class="btn-sec">LET'S TALK <img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
+                                </div>
+                            </div>
+                            <div class="row ent-logo-row d-xs-none">
+                                <div class="col-md-3 ps-5">
+                                    <img src="./assets/png/bnp-paribas-logo.png" alt="Logo BNP Paribas">
+                                </div>
+                                <div class="col-md-3 ps-5">
+                                    <img src="./assets/png/tales.png" alt="Logo Tales">
+                                </div>
+                                <div class="col-md-3 ps-5">
+                                    <img src="./assets/png/axa.png" alt="Logo AXA">
+                                </div>
+                                <div class="col-md-3 ps-5">
+                                    <img src="./assets/png/republique-fr.png" alt="Logo République Française">
+                                </div>
+                            </div>
+                            <div class="row ent-logo-row d-md-none">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./assets/png/bnp-paribas-logo.png" alt="Logo BNP Paribas">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="./assets/png/tales.png" alt="Logo Tales">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./assets/png/axa.png" alt="Logo AXA">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="./assets/png/republique-fr.png" alt="Logo République Française">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-md-5">
+                            <img src="./assets/png/illustration-data-management.png" alt="illustration data managment" style="max-height: 460px; max-width: 580px;">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
+                <div class="container marquee-banner-container m-0 p-0">
+                    <div class="row marquee-banner-row pb-5">
+                        <div class="col">
+                            <h1 class="marquee-banner">DATA <span class="mx-4">VAULT –</span> DATA LAKES – DATA MARTS <span class="mx-4">– DATA</span>CLOUD <span class="mx-4">– DATA</span> WAREHOUSES – STRATEGY EXECUTION </h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row separateur-diagonal"></div>
+            <section class="vision py-5">
+                <img class="parallaxe-image" src="./assets/svg/parallaxe-shapes-duo-colors.svg" alt="parallaxe shape">
+                <div class="container" style="padding-bottom: 16rem;">
+                    <div class="row">
+                        <div class="col-md-6 p-xs-1">
+                            <div class="row">
+                                <div class="col-10">
+                                    <h2 class="titre-2" style="color: var(--primary-color);">Get out of the chaos</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-xs-1">
+                            <div class="row">
+                                <div class="col-10">
+                                    <p class="text-regular">
+                                        In today’s perpetual disruption and digital transformation era, volume of data managed expand exponentially and change the way organizations do business. This comes as little surprise and induces a rising demand for data-driven customer experiences, together with changing data volume/sources and quality requirements. <br>
+                                        <br>
+                                        However, company runs their processes over hundreds of systems that don’t play nice together, leaving a lot of room for inefficiencies to hide that are silent killers to your business performance.<br>
+                                        <br>
+                                        While many companies state they want to be data-driven, most have only begun to scratch the surface in terms of realizing the full potential of this rich resource. <br>
+                                        <br>
+                                        Pilot'in recognizes the right for organizations to become truly data-driven, moving  from a fragmented view to a global vision and drive their strategy even further.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button class="btn-prim mt-3">Discover our vision<img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="computer" style="background-color: var(--primary-color);">
+                <div class="row computer-analytics-row">
                     <div class="col">
-                        <div class="dropdown-menu-products">
-                            <div class="container py-5">
-                                <div class="row products-title-row py-4">
+                        <img src="./assets/png/computer-screen-data-score-analyst.png" alt="analyse de données">
+                    </div>
+                </div>
+            </section>
+            <section class="knowledges" style="background-color: var(--primary-color); position: relative; top: -6rem;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="titre-2" style="color: var(--white); text-align: center;">How we help tackle these <span style="color: var(--pelorus-500);">challenges</span>?</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py-4">
+                    <div class="card p-3 knowledges-card">
+                        <div class="row">
+                            <div class="col-6 d-flex" style="justify-content: center;">
+                                <img src="./assets/png/Datafactory-v3@2x.png" alt="datafactory illustration">
+                            </div>
+                            <div class="col-6 pt-5">
+                                <div class="row">
                                     <div class="col">
-                                        <h5 class="titre-5">Our products</h5>
+                                        <h3 class="titre-3 datafactory"><i class='bx bx-trending-up'></i> DATAFACTORY</h3>
                                     </div>
                                 </div>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6 datafactory-item px-2">
-                                            <div class="row">
-                                                <h6 class="titre-6 dropdown-subtitle datafactory"><i class='bx bx-trending-up'></i> DataFactory</h6>
-                                            </div>
-                                            <div class="row">
-                                                <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 datafactory-item px-2">
-                                            <div class="row">
-                                                <h6 class="titre-6 dropdown-subtitle datafactory"><i class='bx bx-trending-up'></i> DataFactory</h6>
-                                            </div>
-                                            <div class="row">
-                                                <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
-                                            </div>
-                                        </div>
+                                <div class="row pt-3 pb-5">
+                                    <div class="col-10">
+                                        <p class="text-regular">Build your next generation data warehouse automation platform with its unique low-code/no-code approach. Accelerate your business today and generate untapped value from your organization's data.</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="dropdown-menu-resources">
-                            <div class="container py-5">
-                                <div class="row products-title-row py-4">
+                                <div class="row datafactory-icon-row">
                                     <div class="col">
-                                        <h5 class="titre-5">Discover all our resources</h5>
+                                        <div class="row pb-4">
+                                            <h5 class="titre-5"><i class='bx bx-file' ></i> Manage and orchestrate</h5>
+                                        </div>
+                                        <div class="row pb-4">
+                                            <h5 class="titre-5"><i class='bx bx-lock-alt' ></i> Dispatch powerd elements</h5>
+                                        </div>
+                                        <div class="row pb-4">
+                                            <h5 class="titre-5"><i class='bx bx-pie-chart-alt-2'></i> Manage and orchestrate</h5>
+                                        </div>
+                                        <div class="row pb-4">
+                                            <h5 class="titre-5"><i class='bx bx-file' ></i> Manage and orchestrate</h5>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn-sec">Découvrir la solution<img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-0 knowledges-card my-5">
+                        <div class="row">
+                            <div class="col-6 p-5">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h3 class="titre-3"><i class='bx bx-share-alt' style="color: var(--bitter-500); margin-right: 1rem;"></i> PROPILOT</h3>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-5">
+                                    <div class="col-10">
+                                        <p class="text-regular">Plan, do, check and align all your strategic plans in one single platform designed and built for modern and efficient organizations. No more spreadsheets sent via emails or time wasted for reconciliation. Focus on what really matters, achieving your goals. </p>
+                                    </div>
+                                </div>
+                                <div class="row datafactory-icon-row">
+                                    <div class="col">
+                                        <div class="row pb-4">
+                                            <h5 class="titre-5"><i class='bx bx-objects-vertical-center'></i> Connect strategic plans to execution</h5>
+                                        </div>
+                                        <div class="row pb-4">
+                                            <h5 class="titre-5"><i class='bx bx-line-chart'></i> Know the status of plans </h5>
+                                        </div>
+                                        <div class="row pb-4">
+                                            <h5 class="titre-5"><i class='bx bx-alarm-exclamation' ></i> Adapt quickly to changes</h5>
+                                        </div>
+                                        <div class="row pb-4">
+                                            <h5 class="titre-5"><i class='bx bx-medal' ></i> Reward real achiviers</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn-sec">Learn more about ProPilot<img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6"></div>
+                        </div>
+                        <img src="./assets/svg/propilot-illustration.svg" alt="tablette tactile" class="propilot-illustration">
+                    </div>
+                </div>
+            </section>
+            <div class="row separateur-diagonal-2"></div>
+            <section class="customers">
+                <img src="./assets/png/shape-dot-white-bg.png" alt="demi cercle" class="shape-background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="titre-3 text-center">They trust Pilot'in.</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="titre-4 text-center pb-md-4">Why not you?</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row carousel-row">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="gradient-overlay"></div>
+                                                <div class="col-md-6 carousel-img px-0">
+                                                    <img src="./assets/png/Casclient-BNPParibas.jpg" alt="BNP Paribas" class="cas-client-img">
+                                                    <a href="#"><img src="./assets/png/play-circle.png" alt="Bouton play" class="play-btn"></a> 
+                                                </div>
+                                                <div class="col-md-6 p-md-5 carousel-data">
+                                                    <div class="container">
+                                                        <div class="row logo-row">
+                                                            <div class="col">
+                                                                <img src="./assets/png/bnp-paribas-logo.png" alt="BNP Paribas">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <h5 class="titre-5" style="color: var(--pelorus-500);">Hervé Gouëzel</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <h4 class="titre-4" style="color: var(--white);">The solutions offered by Pilot'in let us keep control of our plan. In the end, we were able to largely surpass our initial objectives.</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row arrow-row">
+                                                            <div class="col">
+                                                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                                    <img src="./assets/png/button-left.png" alt="Flèche gauche">
+                                                                </a>
+                                                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                                    <img src="./assets/png/button-right.png" alt="Flèche droite">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row dots-row">
+                                                            <div class="col">
+                                                                <img src="./assets/svg/navigation-dots(1).svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card item-card">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="gradient-overlay"></div>
+                                                <div class="col-md-6 carousel-img px-0">
+                                                    <img src="./assets/png/Casclient-DITP.png" alt="DITP" class="cas-client-img">
+                                                    <a href="#"><img src="./assets/png/play-circle.png" alt="Bouton play" class="play-btn"></a> 
+                                                </div>
+                                                <div class="col-md-6 p-md-5 carousel-data">
+                                                    <div class="container">
+                                                        <div class="row logo-row">
+                                                            <div class="col">
+                                                                <img src="./assets/png/ditp.png" alt="BNP Paribas">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <h5 class="titre-5" style="color: var(--pelorus-500);">Bruno Parent</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <h4 class="titre-4" style="color: var(--white);">With propilot, we are able to share information in real time and use this effectively to steer the covid19 recovery plan across all ministries</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row arrow-row">
+                                                            <div class="col">
+                                                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                                    <img src="./assets/png/button-left.png" alt="Flèche gauche">
+                                                                </a>
+                                                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                                    <img src="./assets/png/button-right.png" alt="Flèche droite">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row dots-row">
+                                                            <div class="col">
+                                                                <img src="./assets/svg/navigation-dots(2).svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="gradient-overlay"></div>
+                                                <div class="col-md-6 carousel-img px-0">
+                                                    <img src="./assets/png/Casclient-Exki.jpeg" alt="Exki" class="cas-client-img">
+                                                    <a href="#"><img src="./assets/png/play-circle.png" alt="Bouton play" class="play-btn"></a> 
+                                                </div>
+                                                <div class="col-md-6 p-md-5 carousel-data">
+                                                    <div class="container">
+                                                        <div class="row logo-row">
+                                                            <div class="col">
+                                                                <img src="./assets/png/EXKi-2.png" alt="BNP Paribas">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <h5 class="titre-5" style="color: var(--pelorus-500);">Thierry Soubestre</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <h4 class="titre-4" style="color: var(--white);">In a few weeks, 5 critical financial data sources were integrated and information is now available every day.</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row arrow-row">
+                                                            <div class="col">
+                                                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                                    <img src="./assets/png/button-left.png" alt="Flèche gauche">
+                                                                </a>
+                                                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                                    <img src="./assets/png/button-right.png" alt="Flèche droite">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row dots-row">
+                                                            <div class="col">
+                                                                <img src="./assets/svg/navigation-dots(3).svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="titre-3 text-center">Nos articles de blog</h3>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center pt-3">
+                        <div class="col-8">
+                            <p class="text-regular text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est ridiculus velit interdum aliquam libero sit a in. Id nibh vitae, massa sed a vel ultricies pharetra auctor. Libero sed facilisi faucibus etiam aliquet amet, purus, tortor, cursus. Mauris malesuada morbi ultrices diam amet fringilla adipiscing faucibus quis.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card blog-card">
+                                <div class="container p-4">
                                     <div class="row">
-                                        <div class="col-md-3 datafactory-item px-2">
-                                            <div class="row">
-                                                <h6 class="titre-6 dropdown-subtitle datafactory"><i class='bx bx-trending-up'></i> DataFactory</h6>
-                                            </div>
-                                            <div class="row">
-                                                <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 datafactory-item px-2">
-                                            <div class="row">
-                                                <h6 class="titre-6 dropdown-subtitle datafactory"><i class='bx bx-trending-up'></i> DataFactory</h6>
-                                            </div>
-                                            <div class="row">
-                                                <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 datafactory-item px-2">
-                                            <div class="row">
-                                                <h6 class="titre-6 dropdown-subtitle datafactory"><i class='bx bx-trending-up'></i> DataFactory</h6>
-                                            </div>
-                                            <div class="row">
-                                                <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 datafactory-item px-2">
-                                            <div class="row">
-                                                <h6 class="titre-6 dropdown-subtitle datafactory"><i class='bx bx-trending-up'></i> DataFactory</h6>
-                                            </div>
-                                            <div class="row">
-                                                <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
-                                            </div>
+                                        <div class="col">
+                                            <button class="btn-categorie">Catégorie</button>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <section class="welcome pt-5" style="background-color: var(--primary-color);">
-        <div class="container">
-            <div class="row pt-5">
-                <div class="col-6 py-5">
-                    <div class="row">
-                        <div class="col-md-10 col-sm-12 py-5">
-                            <h1 class="titre-1 animate__animated animate__fadeInDown" style="color: var(--white);">Meet the future of your <span style="color: var(--pelorus-500);">organization</span> today</h1>
-                        </div>
-                    </div>
-                    <div class="row py-1">
-                        <div class="col-10">
-                            <p class="text-regular" style="color: var(--white);">We build software that empower public and private organizations to bridge the gap between data, decisions and strategy execution.</p>
-                        </div>
-                    </div>
-                    <div class="row py-1">
-                        <div class="col">
-                            <button class="btn-sec">LET'S TALK <img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
-                        </div>
-                    </div>
-                    <div class="row ent-logo-row">
-                        <div class="col-3">
-                            <img src="./assets/png/bnp-paribas-logo.png" alt="Logo BNP Paribas">
-                        </div>
-                        <div class="col-3 ps-5">
-                            <img src="./assets/png/tales.png" alt="Logo Tales">
-                        </div>
-                        <div class="col-3 ps-5">
-                            <img src="./assets/png/axa.png" alt="Logo AXA">
-                        </div>
-                        <div class="col-3 ps-5">
-                            <img src="./assets/png/republique-fr.png" alt="Logo République Française">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 p-max">
-                    <img src="./assets/png/illustration-data-management.png" alt="illustration data managment" style="max-height: 460px; max-width: 580px;">
-                </div>
-            </div>
-        </div>
-        <div class="row marquee-banner-row pb-5">
-            <div class="col">
-                <h1 class="marquee-banner">DATA <span class="mx-4">VAULT –</span> DATA LAKES – DATA MARTS <span class="mx-4">– DATA</span>CLOUD <span class="mx-4">– DATA</span> WAREHOUSES – STRATEGY EXECUTION </h1>
-            </div>
-        </div>
-    </section>
-    <div class="row separateur-diagonal"></div>
-    <section class="vision py-5">
-        <img class="parallaxe-image" src="./assets/svg/parallaxe-shapes-duo-colors.svg" alt="parallaxe shape">
-        <div class="container" style="padding-bottom: 16rem;">
-            <div class="row">
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-10">
-                            <h2 class="titre-2" style="color: var(--primary-color);">Get out of the chaos</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-10">
-                            <p class="text-regular">
-                                In today’s perpetual disruption and digital transformation era, volume of data managed expand exponentially and change the way organizations do business. This comes as little surprise and induces a rising demand for data-driven customer experiences, together with changing data volume/sources and quality requirements. <br>
-                                <br>
-                                However, company runs their processes over hundreds of systems that don’t play nice together, leaving a lot of room for inefficiencies to hide that are silent killers to your business performance.<br>
-                                <br>
-                                While many companies state they want to be data-driven, most have only begun to scratch the surface in terms of realizing the full potential of this rich resource. <br>
-                                <br>
-                                Pilot'in recognizes the right for organizations to become truly data-driven, moving  from a fragmented view to a global vision and drive their strategy even further.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <button class="btn-prim mt-3">Discover our vision<img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="computer" style="background-color: var(--primary-color);">
-        <div class="row computer-analytics-row">
-            <div class="col">
-                <img src="./assets/png/computer-screen-data-score-analyst.png" alt="analyse de données">
-            </div>
-        </div>
-    </section>
-    <section class="knowledges" style="background-color: var(--primary-color); position: relative; top: -6rem;">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2 class="titre-2" style="color: var(--white); text-align: center;">How we help tackle these <span style="color: var(--pelorus-500);">challenges</span>?</h2>
-                </div>
-            </div>
-        </div>
-        <div class="container py-4">
-            <div class="card p-3 knowledges-card">
-                <div class="row">
-                    <div class="col-6 d-flex" style="justify-content: center;">
-                        <img src="./assets/png/Datafactory-v3@2x.png" alt="datafactory illustration">
-                    </div>
-                    <div class="col-6 pt-5">
-                        <div class="row">
-                            <div class="col">
-                                <h3 class="titre-3 datafactory"><i class='bx bx-trending-up'></i> DATAFACTORY</h3>
-                            </div>
-                        </div>
-                        <div class="row pt-3 pb-5">
-                            <div class="col-10">
-                                <p class="text-regular">Build your next generation data warehouse automation platform with its unique low-code/no-code approach. Accelerate your business today and generate untapped value from your organization's data.</p>
-                            </div>
-                        </div>
-                        <div class="row datafactory-icon-row">
-                            <div class="col">
-                                <div class="row pb-4">
-                                    <h5 class="titre-5"><i class='bx bx-file' ></i> Manage and orchestrate</h5>
-                                </div>
-                                <div class="row pb-4">
-                                    <h5 class="titre-5"><i class='bx bx-lock-alt' ></i> Dispatch powerd elements</h5>
-                                </div>
-                                <div class="row pb-4">
-                                    <h5 class="titre-5"><i class='bx bx-pie-chart-alt-2'></i> Manage and orchestrate</h5>
-                                </div>
-                                <div class="row pb-4">
-                                    <h5 class="titre-5"><i class='bx bx-file' ></i> Manage and orchestrate</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <button class="btn-sec">Découvrir la solution<img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card p-0 knowledges-card my-5">
-                <div class="row">
-                    <div class="col-6 p-5">
-                        <div class="row">
-                            <div class="col-10">
-                                <h3 class="titre-3"><i class='bx bx-share-alt' style="color: var(--bitter-500); margin-right: 1rem;"></i> PROPILOT</h3>
-                            </div>
-                        </div>
-                        <div class="row pt-3 pb-5">
-                            <div class="col-10">
-                                <p class="text-regular">Plan, do, check and align all your strategic plans in one single platform designed and built for modern and efficient organizations. No more spreadsheets sent via emails or time wasted for reconciliation. Focus on what really matters, achieving your goals. </p>
-                            </div>
-                        </div>
-                        <div class="row datafactory-icon-row">
-                            <div class="col">
-                                <div class="row pb-4">
-                                    <h5 class="titre-5"><i class='bx bx-objects-vertical-center'></i> Connect strategic plans to execution</h5>
-                                </div>
-                                <div class="row pb-4">
-                                    <h5 class="titre-5"><i class='bx bx-line-chart'></i> Know the status of plans </h5>
-                                </div>
-                                <div class="row pb-4">
-                                    <h5 class="titre-5"><i class='bx bx-alarm-exclamation' ></i> Adapt quickly to changes</h5>
-                                </div>
-                                <div class="row pb-4">
-                                    <h5 class="titre-5"><i class='bx bx-medal' ></i> Reward real achiviers</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <button class="btn-sec">Learn more about ProPilot<img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6"></div>
-                </div>
-                <img src="./assets/svg/propilot-illustration.svg" alt="tablette tactile" class="propilot-illustration">
-            </div>
-        </div>
-    </section>
-    <div class="row separateur-diagonal-2"></div>
-    <section class="customers">
-        <img src="./assets/png/shape-dot-white-bg.png" alt="demi cercle" class="shape-background">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3 class="titre-3 text-center">They trust Pilot'in.</h3>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <h4 class="titre-4 text-center pb-md-4">Why not you?</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row carousel-row">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card">
-                                <div class="container">
                                     <div class="row">
-                                        <div class="gradient-overlay"></div>
-                                        <div class="col-md-6 carousel-img px-0">
-                                            <img src="./assets/png/Casclient-BNPParibas.jpg" alt="BNP Paribas" class="cas-client-img">
-                                            <a href="#"><img src="./assets/png/play-circle.png" alt="Bouton play" class="play-btn"></a> 
-                                        </div>
-                                        <div class="col-md-6 p-md-5 carousel-data">
-                                            <div class="container">
-                                                <div class="row logo-row">
-                                                    <div class="col">
-                                                        <img src="./assets/png/bnp-paribas-logo.png" alt="BNP Paribas">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <h5 class="titre-5" style="color: var(--pelorus-500);">Hervé Gouëzel</h5>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <h4 class="titre-4" style="color: var(--white);">The solutions offered by Pilot'in let us keep control of our plan. In the end, we were able to largely surpass our initial objectives.</h4>
-                                                    </div>
-                                                </div>
-                                                <div class="row arrow-row">
-                                                    <div class="col">
-                                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                                            <img src="./assets/png/button-left.png" alt="Flèche gauche">
-                                                        </a>
-                                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                                            <img src="./assets/png/button-right.png" alt="Flèche droite">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="row dots-row">
-                                                    <div class="col">
-                                                        <img src="./assets/svg/navigation-dots(1).svg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="col py-4">
+                                            <h5 class="titre-5">Titre de l’article sur une ou plusieurs lignes. Au delà de 100 caractères le texte sera masqué par des poin…</h5>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card item-card">
-                                <div class="container">
                                     <div class="row">
-                                        <div class="gradient-overlay"></div>
-                                        <div class="col-md-6 carousel-img px-0">
-                                            <img src="./assets/png/Casclient-DITP.png" alt="DITP" class="cas-client-img">
-                                            <a href="#"><img src="./assets/png/play-circle.png" alt="Bouton play" class="play-btn"></a> 
+                                        <div class="col">
+                                            <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper urna molestie arcu sit id. Ultricies purus lectus consectetur imperdiet aliquam eu, rutrum erat consectetur. Blandit mi a facilisi bibendum erat euismod nulla sagittis. Semper urna molestie arcu sit id. Ultricies purus lectus consectetur imperdiet aliquam eu, rutrum erat consectetur. Blandit</p>
                                         </div>
-                                        <div class="col-md-6 p-md-5 carousel-data">
-                                            <div class="container">
-                                                <div class="row logo-row">
-                                                    <div class="col">
-                                                        <img src="./assets/png/ditp.png" alt="BNP Paribas">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <h5 class="titre-5" style="color: var(--pelorus-500);">Bruno Parent</h5>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <h4 class="titre-4" style="color: var(--white);">With propilot, we are able to share information in real time and use this effectively to steer the covid19 recovery plan across all ministries</h4>
-                                                    </div>
-                                                </div>
-                                                <div class="row arrow-row">
-                                                    <div class="col">
-                                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                                            <img src="./assets/png/button-left.png" alt="Flèche gauche">
-                                                        </a>
-                                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                                            <img src="./assets/png/button-right.png" alt="Flèche droite">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="row dots-row">
-                                                    <div class="col">
-                                                        <img src="./assets/svg/navigation-dots(2).svg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="col-md-2">
+                                            <img src="./assets/png/Julien-Dereumaux.png" alt="Julien Dereumaux">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p class="text-regular d-inline mb-0">Julien Dereumaux - Capitaine de Pilot’in</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#"><img src="./assets//svg/button-right.svg" alt="" class="right-arrow-btn"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="container">
+                        <div class="col-md-4">
+                            <div class="card blog-card">
+                                <div class="container p-4">
                                     <div class="row">
-                                        <div class="gradient-overlay"></div>
-                                        <div class="col-md-6 carousel-img px-0">
-                                            <img src="./assets/png/Casclient-Exki.jpeg" alt="Exki" class="cas-client-img">
-                                            <a href="#"><img src="./assets/png/play-circle.png" alt="Bouton play" class="play-btn"></a> 
+                                        <div class="col">
+                                            <button class="btn-categorie">Catégorie</button>
                                         </div>
-                                        <div class="col-md-6 p-md-5 carousel-data">
-                                            <div class="container">
-                                                <div class="row logo-row">
-                                                    <div class="col">
-                                                        <img src="./assets/png/EXKi-2.png" alt="BNP Paribas">
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <h5 class="titre-5" style="color: var(--pelorus-500);">Thierry Soubestre</h5>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <h4 class="titre-4" style="color: var(--white);">In a few weeks, 5 critical financial data sources were integrated and information is now available every day.</h4>
-                                                    </div>
-                                                </div>
-                                                <div class="row arrow-row">
-                                                    <div class="col">
-                                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                                            <img src="./assets/png/button-left.png" alt="Flèche gauche">
-                                                        </a>
-                                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                                            <img src="./assets/png/button-right.png" alt="Flèche droite">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="row dots-row">
-                                                    <div class="col">
-                                                        <img src="./assets/svg/navigation-dots(3).svg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col py-4">
+                                            <h5 class="titre-5">Titre de l’article sur une ou plusieurs lignes. Au delà de 100 caractères le texte sera masqué par des poin…</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper urna molestie arcu sit id. Ultricies purus lectus consectetur imperdiet aliquam eu, rutrum erat consectetur. Blandit mi a facilisi bibendum erat euismod nulla sagittis. Semper urna molestie arcu sit id. Ultricies purus lectus consectetur imperdiet aliquam eu, rutrum erat consectetur. Blandit</p>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="col-md-2">
+                                            <img src="./assets/png/Julien-Dereumaux.png" alt="Julien Dereumaux">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p class="text-regular d-inline mb-0">Julien Dereumaux - Capitaine de Pilot’in</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#"><img src="./assets//svg/button-right.svg" alt="" class="right-arrow-btn"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card blog-card">
+                                <div class="container p-4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <button class="btn-categorie">Catégorie</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col py-4">
+                                            <h5 class="titre-5">Titre de l’article sur une ou plusieurs lignes. Au delà de 100 caractères le texte sera masqué par des poin…</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper urna molestie arcu sit id. Ultricies purus lectus consectetur imperdiet aliquam eu, rutrum erat consectetur. Blandit mi a facilisi bibendum erat euismod nulla sagittis. Semper urna molestie arcu sit id. Ultricies purus lectus consectetur imperdiet aliquam eu, rutrum erat consectetur. Blandit</p>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="col-md-2">
+                                            <img src="./assets/png/Julien-Dereumaux.png" alt="Julien Dereumaux">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p class="text-regular d-inline mb-0">Julien Dereumaux - Capitaine de Pilot’in</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#"><img src="./assets//svg/button-right.svg" alt="" class="right-arrow-btn"></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center py-5">
+                            <button class="btn-prim">Tous les articles<img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <section class="conclusion">
+                <div class="container">
+                    <div class="card conclusion-card">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="./assets/png/illustration-cta@2x.png" alt="datafactory illustration">
+                            </div>
+                            <div class="col-2"></div>
+                            <div class="col-6 py-max">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="titre-3 datafactory" style="color: var(--pelorus-500);">Ready to meet the future of your organization?</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h4 class="titre-4" style="color: var(--white);">Begin your data-driven transformation today!</h4> 
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn-sec">Book a demo<img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="pt-5">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="titre-5" style="color: var(--pelorus-700);">Get involved</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#" class="footer-link text-regular text-decoration-none">About us <img src="./assets/svg/icon-left-bitter-500.svg" alt="Flèche droite" class="footer-right-arrow"></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#" class="footer-link text-regular text-decoration-none">Join us <img src="./assets/svg/icon-left-bitter-500.svg" alt="Flèche droite" class="footer-right-arrow"></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#" class="footer-link text-regular text-decoration-none">Contact us <img src="./assets/svg/icon-left-bitter-500.svg" alt="Flèche droite" class="footer-right-arrow"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="titre-5" style="color: var(--pelorus-700);">Belgium</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="text-regular">Nom et numéro de la voie</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#" class="footer-link text-regular text-decoration-none">+33 00000000 <img src="./assets/svg/icon-left-bitter-500.svg" alt="Flèche droite" class="footer-right-arrow"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="titre-5" style="color: var(--pelorus-700);">France</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="text-regular">Nom et numéro de la voie</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#" class="footer-link text-regular text-decoration-none">+33 00000000 <img src="./assets/svg/icon-left-bitter-500.svg" alt="Flèche droite" class="footer-right-arrow"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="titre-5">Suivez nous sur les réseau sociaux</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col rsx-logo">
+                                    <a href="#"><img src="./assets/png/twitter-logo.png" alt="logo twitter"></a>
+                                    <a href="#"><img src="./assets/png/linkedin-logo.png" alt="logo linkedin"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        
+        
+            <script src="./js/nav-menu.js"></script>
+            <script src="./js/parallaxe.js"></script>
+            <script src="./js/scroll-bar.js"></script>
         </div>
-    </section>
-    <section class="blog py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3 class="titre-3 text-center">Nos articles de blog</h3>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center pt-3">
-                <div class="col-8">
-                    <p class="text-regular text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est ridiculus velit interdum aliquam libero sit a in. Id nibh vitae, massa sed a vel ultricies pharetra auctor. Libero sed facilisi faucibus etiam aliquet amet, purus, tortor, cursus. Mauris malesuada morbi ultrices diam amet fringilla adipiscing faucibus quis.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card blog-card">
-                        <div class="container p-4">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn-categorie">Catégorie</button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col py-4">
-                                    <h5 class="titre-5">Titre de l’article sur une ou plusieurs lignes. Au delà de 100 caractères le texte sera masqué par des poin…</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper urna molestie arcu sit id. Ultricies purus lectus consectetur imperdiet aliquam eu, rutrum erat consectetur. Blandit mi a facilisi bibendum erat euismod nulla sagittis. Semper urna molestie arcu sit id. Ultricies purus lectus consectetur imperdiet aliquam eu, rutrum erat consectetur. Blandit</p>
-                                </div>
-                            </div>
-                            <div class="row d-flex">
-                                <div class="col-md-2">
-                                    <img src="./assets/png/Julien-Dereumaux.png" alt="Julien Dereumaux">
-                                </div>
-                                <div class="col-md-8">
-                                    <p class="text-regular d-inline mb-0">Julien Dereumaux - Capitaine de Pilot’in</p>
-                                </div>
-                                <div class="col-md-2">
-                                    <a href="#"><img src="./assets//svg/button-right.svg" alt="" class="right-arrow-btn"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card blog-card">
-                        <div class="container p-4">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn-categorie">Catégorie</button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col py-4">
-                                    <h5 class="titre-5">Titre de l’article sur une ou plusieurs lignes. Au delà de 100 caractères le texte sera masqué par des poin…</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper urna molestie arcu sit id. Ultricies purus lectus consectetur imperdiet aliquam eu, rutrum erat consectetur. Blandit mi a facilisi bibendum erat euismod nulla sagittis. Semper urna molestie arcu sit id. Ultricies purus lectus consectetur imperdiet aliquam eu, rutrum erat consectetur. Blandit</p>
-                                </div>
-                            </div>
-                            <div class="row d-flex">
-                                <div class="col-md-2">
-                                    <img src="./assets/png/Julien-Dereumaux.png" alt="Julien Dereumaux">
-                                </div>
-                                <div class="col-md-8">
-                                    <p class="text-regular d-inline mb-0">Julien Dereumaux - Capitaine de Pilot’in</p>
-                                </div>
-                                <div class="col-md-2">
-                                    <a href="#"><img src="./assets//svg/button-right.svg" alt="" class="right-arrow-btn"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card blog-card">
-                        <div class="container p-4">
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn-categorie">Catégorie</button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col py-4">
-                                    <h5 class="titre-5">Titre de l’article sur une ou plusieurs lignes. Au delà de 100 caractères le texte sera masqué par des poin…</h5>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper urna molestie arcu sit id. Ultricies purus lectus consectetur imperdiet aliquam eu, rutrum erat consectetur. Blandit mi a facilisi bibendum erat euismod nulla sagittis. Semper urna molestie arcu sit id. Ultricies purus lectus consectetur imperdiet aliquam eu, rutrum erat consectetur. Blandit</p>
-                                </div>
-                            </div>
-                            <div class="row d-flex">
-                                <div class="col-md-2">
-                                    <img src="./assets/png/Julien-Dereumaux.png" alt="Julien Dereumaux">
-                                </div>
-                                <div class="col-md-8">
-                                    <p class="text-regular d-inline mb-0">Julien Dereumaux - Capitaine de Pilot’in</p>
-                                </div>
-                                <div class="col-md-2">
-                                    <a href="#"><img src="./assets//svg/button-right.svg" alt="" class="right-arrow-btn"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col d-flex justify-content-center py-5">
-                    <button class="btn-prim">Tous les articles<img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="conclusion">
-        <div class="container">
-            <div class="card conclusion-card">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="./assets/png/illustration-cta@2x.png" alt="datafactory illustration">
-                    </div>
-                    <div class="col-2"></div>
-                    <div class="col-6 py-max">
-                        <div class="row">
-                            <div class="col">
-                                <h3 class="titre-3 datafactory" style="color: var(--pelorus-500);">Ready to meet the future of your organization?</h3>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-8">
-                                <h4 class="titre-4" style="color: var(--white);">Begin your data-driven transformation today!</h4> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <button class="btn-sec">Book a demo<img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="pt-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col">
-                            <h5 class="titre-5" style="color: var(--pelorus-700);">Get involved</h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="row">
-                            <div class="col">
-                                <a href="#" class="footer-link text-regular text-decoration-none">About us <img src="./assets/svg/icon-left-bitter-500.svg" alt="Flèche droite" class="footer-right-arrow"></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <a href="#" class="footer-link text-regular text-decoration-none">Join us <img src="./assets/svg/icon-left-bitter-500.svg" alt="Flèche droite" class="footer-right-arrow"></a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <a href="#" class="footer-link text-regular text-decoration-none">Contact us <img src="./assets/svg/icon-left-bitter-500.svg" alt="Flèche droite" class="footer-right-arrow"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col">
-                            <h5 class="titre-5" style="color: var(--pelorus-700);">Belgium</h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-regular">Nom et numéro de la voie</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <a href="#" class="footer-link text-regular text-decoration-none">+33 00000000 <img src="./assets/svg/icon-left-bitter-500.svg" alt="Flèche droite" class="footer-right-arrow"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col">
-                            <h5 class="titre-5" style="color: var(--pelorus-700);">France</h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-regular">Nom et numéro de la voie</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <a href="#" class="footer-link text-regular text-decoration-none">+33 00000000 <img src="./assets/svg/icon-left-bitter-500.svg" alt="Flèche droite" class="footer-right-arrow"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col">
-                            <h5 class="titre-5">Suivez nous sur les réseau sociaux</h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col rsx-logo">
-                            <a href="#"><img src="./assets/png/twitter-logo.png" alt="logo twitter"></a>
-                            <a href="#"><img src="./assets/png/linkedin-logo.png" alt="logo linkedin"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-
-    <script src="./js/nav-menu.js"></script>
-    <script src="./js/parallaxe.js"></script>
-    <script src="./js/scroll-bar.js"></script>
     </body>
 </html>
