@@ -46,8 +46,14 @@ body{
   .d-xs-none{
     display: none;
   }
+  .mb-xs-2{
+    margin-bottom: 2rem;
+  }
   .p-xs-1{
     padding: 2rem;
+  }
+  .pt-xs-3{
+    padding-top: 3rem;
   }
   .titre-1{
     font-family: 'Outfit';
@@ -88,8 +94,20 @@ body{
   header nav{
     display: none;
   }
+  .separateur-diagonal{
+    position: relative;
+    top: -10rem;
+    height: 22rem;
+    background-color: var(--primary-color);
+    rotate: -3.5deg;
+    z-index: 4;
+    left: -0.5rem;
+  }
 }
 @media screen and (min-width: 576px) {
+  .m-md-5{
+    margin: 5rem;
+  }
   .titre-1{
     font-family: 'Outfit';
     font-size: 72px;
@@ -125,6 +143,25 @@ body{
     font-size: 18px;
     line-height: 28px;
     font-weight: 500;
+  }
+  .separateur-diagonal{
+    position: relative;
+    top: -15rem;
+    height: 28rem;
+    background-color: var(--primary-color);
+    rotate: -3.5deg;
+    z-index: 4;
+    left: -1rem;
+  }
+  .knowledges-card{
+    max-height: 800px;
+  }
+  .propilot-illustration{
+    position: absolute;
+    height: 100%;
+    padding: 0;
+    top: 0;
+    right: 0;
   }
 }
 .py-max{
@@ -212,15 +249,6 @@ body{
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-}
-.separateur-diagonal{
-  position: relative;
-  top: -15rem;
-  height: 28rem;
-  background-color: var(--primary-color);
-  rotate: -3.5deg;
-  z-index: 4;
-  left: -1rem;
 }
 .separateur-diagonal-2{
   position: relative;
@@ -339,15 +367,12 @@ backdrop-filter: blur(5px); /* Effet de flou */
   opacity: 0;
   transition: max-height 0.4s ease, opacity 0.4s ease; /* Ajout de transitions */
 }
-
 /* CSS pour afficher le menu déroulant lorsque la classe "active" est présente */
 .dropdown-menu-resources.active {
   max-height: 320px; /* ou la hauteur souhaitée */
   opacity: 1;
   transition: max-height 0.3s ease, opacity 0.3s ease; /* Ajout de transitions */
 }
-
-
 /* CSS pour afficher le menu déroulant lors du survol du lien "Products" */
 a.text-decoration-none:hover + .dropdown-menu {
   display: block;
@@ -371,7 +396,6 @@ a.text-decoration-none:hover + .dropdown-menu {
   aspect-ratio: 4/3;
   object-fit: contain;
 }
-
 /* Stylisation de la bannière en fin de section welcome */
 .marquee-banner{
   display: flex;
@@ -388,7 +412,6 @@ a.text-decoration-none:hover + .dropdown-menu {
   z-index: 5;
   transform: translateX(0%); /* Déplace le texte en dehors du conteneur initial */
   animation: marquee 15s linear infinite; /* Animation de défilement */
-
 }
 /* Stylisation des mots en lettre vide */
 .marquee-banner span{
@@ -409,6 +432,7 @@ a.text-decoration-none:hover + .dropdown-menu {
   position: absolute;
   top: 120rem;
   right: 0;
+  z-index: -1;
 }
 /* Section customer */
 .computer{
@@ -425,7 +449,6 @@ a.text-decoration-none:hover + .dropdown-menu {
 .knowledges-card{
   border-radius: 25px;
   z-index: 5;
-  max-height: 800px;
   overflow: hidden; /* Masque tout contenu débordant de la carte */
 }
 .knowledges-card img{
@@ -441,14 +464,6 @@ a.text-decoration-none:hover + .dropdown-menu {
   text-align: center;
   background-color: var(--pelorus-100);
   border-radius: 5px;
-}
-.propilot-illustration{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  top: 0;
-  right: 0;
 }
 /* Customer section */
 .shape-background{
@@ -490,6 +505,15 @@ a.text-decoration-none:hover + .dropdown-menu {
   width: 100%;
   height: 100%;
   background: linear-gradient(to left, var(--primary-color) 50%, transparent 100%);
+  z-index: 1;
+}
+.gradient-overlay-xs{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, var(--primary-color) 50%, transparent 100%);
   z-index: 1;
 }
 .carousel-data{
