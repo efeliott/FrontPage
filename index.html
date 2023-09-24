@@ -23,7 +23,7 @@
         <div class="main-container">
             <header>
                 <nav class="nav-bar">
-                    <div class="nav-container ms-5">
+                    <div class="nav-container ms-5 d-xs-none">
                         <div class="row">
                             <div class="nav-1 col-lg-10 col-md-9 col-sm-8">
                                 <ul class="d-flex list-unstyled list-group list-group-horizontal">
@@ -42,7 +42,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="nav-2 d-flex col-lg-2 col-md-3 col-sm-4">
+                            <div class="nav-2 d-flex col-md-3">
                                 <ul class="d-flex list-unstyled list-group list-group-horizontal">
                                     <li class="d-flex align-items-center list-group-item border-0">
                                         <Button class="btn-prim">Free demo <img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></Button>
@@ -52,6 +52,41 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                    <div class="mobile-navbar d-md-none">
+                        <div class="col-xs-9">
+                            <ul class="d-flex list-unstyled list-group list-group-horizontal">
+                                <li>
+                                    <a href="#"><img src="./assets/svg/Logo_blanc.svg" alt="logo Pilot'in"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-3">
+                            <span class="navbar-toggler-icon" id="mobile-menu-button"><i class='bx bx-menu' style="font-size: 24px;"></i></span>
+                        </div>
+                        <div class="mobile-dropdown" id="mobile-dropdown">
+                            <ul>
+                                <div class="row">
+                                    <div class="col">
+                                        <li class="d-flex align-items-center list-group-item border-0">
+                                            <button class="btn-prim">Free demo <img src="./assets/svg/icon-left.svg" alt="Flèche gauche" class="px-2"></button>
+                                        </li>
+                                        <li class="d-flex align-items-center list-group-item border-0">
+                                            <a href="#" class="text-decoration-none">FR <i class='bx bx-chevron-down'></i></a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <li class="d-flex align-items-center list-group-item border-0">
+                                    <a href="#" class="text-decoration-none products-link hover-link-mobile">Products <i class='bx bx-chevron-down'></i></a>
+                                </li>
+                                <li class="d-flex align-items-center list-group-item border-0">
+                                    <a href="#" class="text-decoration-none resources-link hover-link-mobile">Resources <i class='bx bx-chevron-down'></i></a>
+                                </li>
+                                <li class="d-flex align-items-center list-group-item border-0">
+                                    <a href="#" class="text-decoration-none hover-link-mobile">Company</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="container">
@@ -159,33 +194,33 @@
                             </div>
                             <div class="row ent-logo-row d-xs-none">
                                 <div class="col-md-3 ps-5">
-                                    <img src="./assets/png/bnp-paribas-logo.png" alt="Logo BNP Paribas">
+                                    <img src="./assets/svg/BNPparibas.svg" alt="Logo BNP Paribas">
                                 </div>
                                 <div class="col-md-3 ps-5">
-                                    <img src="./assets/png/tales.png" alt="Logo Tales">
+                                    <img src="./assets/svg/Tales.svg" alt="Logo Tales">
                                 </div>
                                 <div class="col-md-3 ps-5">
-                                    <img src="./assets/png/axa.png" alt="Logo AXA">
+                                    <img src="./assets/svg/AXA.svg" alt="Logo AXA">
                                 </div>
                                 <div class="col-md-3 ps-5">
-                                    <img src="./assets/png/republique-fr.png" alt="Logo République Française">
+                                    <img src="./assets/svg/RepubliqueFrancaise.svg" alt="Logo République Française">
                                 </div>
                             </div>
                             <div class="row ent-logo-row d-md-none">
                                 <div class="row">
                                     <div class="col-6">
-                                        <img src="./assets/png/bnp-paribas-logo.png" alt="Logo BNP Paribas">
+                                        <img src="./assets/svg/BNPparibas.svg" alt="Logo BNP Paribas">
                                     </div>
                                     <div class="col-6">
-                                        <img src="./assets/png/tales.png" alt="Logo Tales">
+                                        <img src="./assets/svg/Tales.svg" alt="Logo Tales">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
-                                        <img src="./assets/png/axa.png" alt="Logo AXA">
+                                        <img src="./assets/svg/AXA.svg" alt="Logo AXA">
                                     </div>
                                     <div class="col-6">
-                                        <img src="./assets/png/republique-fr.png" alt="Logo République Française">
+                                        <img src="./assets/svg/RepubliqueFrancaise.svg" alt="Logo République Française">
                                     </div>
                                 </div>
                             </div>
@@ -815,6 +850,7 @@
             <script src="./js/nav-menu.js"></script>
             <script src="./js/parallaxe.js"></script>
             <script src="./js/scroll-bar.js"></script>
+            <script src="./js/navbar-mobile.js"></script>
         </div>
     </body>
 </html>

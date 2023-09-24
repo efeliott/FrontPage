@@ -91,9 +91,6 @@ body{
     line-height: 28px;
     font-weight: 500;
   }
-  header nav{
-    display: none;
-  }
   .separateur-diagonal{
     position: relative;
     top: -10rem;
@@ -331,6 +328,47 @@ backdrop-filter: blur(5px); /* Effet de flou */
 }
 .nav-2 ul li a{
   color: var(--pelorus-500);
+}
+/* Style pour la barre de navigation mobile */
+.mobile-navbar {
+  background-color: var(--primary-color); /* Couleur de fond de la barre de navigation */
+  color: #fff; /* Couleur du texte */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-navbar a {
+  color: #fff; /* Couleur des liens */
+  text-decoration: none;
+}
+/* Style pour le bouton de menu mobile */
+#mobile-menu-button {
+  cursor: pointer;
+}
+/* Style pour la liste déroulante mobile */
+.mobile-dropdown {
+  display: none; /* Masquer la liste déroulante par défaut */
+  position: absolute;
+  top: 80px; /* Distance par rapport à la barre de navigation */
+  left: 0;
+  background-color: var(--primary-color); /* Couleur de fond de la liste déroulante */
+  width: 100%;
+  z-index: 6; /* Assurez-vous que la liste déroulante est au-dessus de tout le reste */
+  border-top: 1px solid var(--gray-500); /* Ligne de séparation en haut de la liste déroulante */
+}
+.mobile-dropdown ul {
+  padding: 0;
+  list-style: none;
+}
+.mobile-dropdown li {
+  padding: 10px;
+  border-bottom: 1px solid #555; /* Ligne de séparation entre les éléments de la liste */
+}
+/* Style pour les liens de la liste déroulante */
+.mobile-dropdown a {
+  color: #fff; /* Couleur du texte des liens */
+  text-decoration: none;
 }
 /* ======= Products ======= */
 /* CSS pour le menu déroulant "Products" */
