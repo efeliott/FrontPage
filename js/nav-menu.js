@@ -35,11 +35,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 100); // Délai de 100 millisecondes
     });
 
-    // Gestionnaire d'événement de clic pour afficher le menu déroulant "Products"
-    productsLink.addEventListener("click", function(event) {
-        event.preventDefault(); // Empêche le lien de suivre le lien
-        dropdownMenuProducts.classList.toggle('active'); // Affiche ou masque le menu déroulant
-        activeDropdown = dropdownMenuProducts;
+    // Gestionnaires d'événements pour suivre le survol du menu déroulant "Products"
+    dropdownMenuProducts.addEventListener("mouseenter", function() {
+        cursorOnDropdown = true;
+    });
+
+    dropdownMenuProducts.addEventListener("mouseleave", function() {
+        cursorOnDropdown = false;
+        // Supprime la classe "active" pour masquer le menu déroulant "Products" lorsque le curseur le quitte
+        dropdownMenuProducts.classList.remove('active');
     });
 
     // Gestionnaire d'événement pour le survol du lien "Resources"
@@ -64,13 +68,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 dropdownMenuResources.classList.remove('active');
             }
         }, 100); // Délai de 100 millisecondes
-    });
-
-    // Gestionnaire d'événement de clic pour afficher le menu déroulant "Resources"
-    resourcesLink.addEventListener("click", function(event) {
-        event.preventDefault(); // Empêche le lien de suivre le lien
-        dropdownMenuResources.classList.toggle('active'); // Affiche ou masque le menu déroulant
-        activeDropdown = dropdownMenuResources;
     });
 
     // Gestionnaires d'événements pour suivre le survol du menu déroulant "Resources"

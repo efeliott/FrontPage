@@ -103,10 +103,26 @@ body{
     z-index: 4;
     left: -0.5rem;
   }
+  .dropdown-menu-products{
+    top: 305px;
+  }
+  .dropdown-menu-products.active{
+    height: 600px;
+  }
+  .dropdown-menu-resources{
+    top: 305px;
+  }
+  .dropdown-menu-resources.active{
+    height: 600px;
+  }
 }
 @media screen and (min-width: 576px) {
   .m-md-5{
     margin: 5rem;
+  }
+  .py-md-5{
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
   .titre-1{
     font-family: 'Outfit';
@@ -165,6 +181,9 @@ body{
   }
   header nav:hover ul li a{
     color: var(--primary-color);
+  }
+  .products-title-row{
+    margin-left: -4rem;
   }
 }
 .py-max{
@@ -348,7 +367,7 @@ backdrop-filter: blur(5px); /* Effet de flou */
 .mobile-dropdown {
   display: none; /* Masquer la liste déroulante par défaut */
   position: absolute;
-  top: 80px; /* Distance par rapport à la barre de navigation */
+  top: 80px;
   left: 0;
   background-color: var(--primary-color); /* Couleur de fond de la liste déroulante */
   width: 100%;
@@ -404,16 +423,13 @@ backdrop-filter: blur(5px); /* Effet de flou */
 }
 /* CSS pour afficher le menu déroulant lorsque la classe "active" est présente */
 .dropdown-menu-resources.active {
-  max-height: 320px;
+  max-height: 600px;
   opacity: 1;
   transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 /* CSS pour afficher le menu déroulant lors du survol du lien "Products" */
 a.text-decoration-none:hover + .dropdown-menu {
   display: block;
-}
-.products-title-row{
-  margin-left: -4rem;
 }
 /* Stylisation dropdown section */
 .dropdown-subtitle{
